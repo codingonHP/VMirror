@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=9F5DBF818C7F4DF88CE5A97E46BC8515/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=9F5DBF818C7F4DF88CE5A97E46BC8515/Name/@EntryValue">MapTrnApplicantCollection</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=9F5DBF818C7F4DF88CE5A97E46BC8515/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;Elements&gt;&lt;UnitTestElement Provider="MSTest" Id="MsTest:VMirrorUnitTest.VMirrorUnitTest" type="MsTestTestClassElement" TypeName="VMirrorUnitTest.VMirrorUnitTest" Project="A9A06CB5-E31C-4F6D-BBD4-9FB7D54C77B9" /&gt;&lt;UnitTestElement Provider="MSTest" Id="MsTest:VMirrorUnitTest.VMirrorUnitTest.MapTrnApplicantCollection" ParentId="MsTest:VMirrorUnitTest.VMirrorUnitTest" type="MsTestTestMethodElement" MethodName="MapTrnApplicantCollection" TypeName="VMirrorUnitTest.VMirrorUnitTest" Project="A9A06CB5-E31C-4F6D-BBD4-9FB7D54C77B9" /&gt;&lt;/Elements&gt;&lt;/Session&gt;</s:String>
+	
+	
+	</wpf:ResourceDictionary>
