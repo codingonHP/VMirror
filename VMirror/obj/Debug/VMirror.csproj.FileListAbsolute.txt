@@ -1,0 +1,4 @@
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirror\bin\Debug\VMirror.dll
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirror\bin\Debug\VMirror.pdb
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirror\obj\Debug\VMirror.dll
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirror\obj\Debug\VMirror.pdb

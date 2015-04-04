@@ -1,0 +1,10 @@
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirrorUnitTest\bin\Debug\VMirrorUnitTest.dll
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirrorUnitTest\bin\Debug\VMirrorUnitTest.pdb
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirrorUnitTest\bin\Debug\VMirror.dll
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirrorUnitTest\bin\Debug\VMirror.pdb
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirrorUnitTest\obj\Debug\VMirrorUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirrorUnitTest\obj\Debug\VMirrorUnitTest.dll
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirrorUnitTest\obj\Debug\VMirrorUnitTest.pdb
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirrorUnitTest\bin\Debug\VMirrorUnitTest.dll.config
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirrorUnitTest\bin\Debug\EntityFramework.dll
+C:\Users\ananvish\Documents\Visual Studio 2012\Projects\HackerEarth\VMirror\VMirrorUnitTest\bin\Debug\EntityFramework.xml

@@ -3,39 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using VMirror.CustomAttributes;
+using VMirror.Framework;
 using VMirror.Settings;
 
 namespace VMirror.Extension
 {
     public static class MirrorApiExtension
     {
-        public static String ProcessAttrs<TSource>(this IEnumerable<TSource> customAttrs)
+        public static HandlerOutput<string> ProcessAttrs(this IEnumerable<Attribute> customAttrs)
         {
-            String customAttribute = Constant.CustomAttrNotApplied;
-            String mapField = String.Empty;
-
             try
             {
                 foreach (var attr in customAttrs)
                 {
-                    var type = attr.GetType();
-
-                    if (type == typeof(Exclude))
+                    var method = attr as IHandler<String>;
+                    if (method != null)
                     {
-                        customAttribute = Constant.ExcludeFromMapping;
-                    }
-
-                    if (type == typeof(Sync))
-                    {
-                        var customAttr = attr as Sync;
-                        if (customAttr != null)
-                        {
-                            mapField = customAttr.FieldName;
-                        }
+                       var handle = method.CustomAttrHandler();
+                        return handle;
                     }
                 }
 
-                return String.IsNullOrEmpty(mapField) ? customAttribute : mapField;
+                return null;
             }
             catch (Exception)
             {
@@ -75,16 +64,16 @@ namespace VMirror.Extension
           
         }
 
-        public static void FillType(this Object target, Object source, Type sourceType, Type targetType, List<String> propertyName, VConfig config)
+        public static void FillType(this Object target, Object source, Type sourceType, Type targetType, Dictionary<String,String> propertyNames, VConfig config)
         {
             try
             {
-                foreach (var prop in propertyName)
+                foreach (var prop in propertyNames)
                 {
                     try
                     {
-                       var value =  GetPropValue(source, sourceType, prop);
-                       SetPropValue(target, targetType,prop,value);
+                       var value =  GetPropValue(source, sourceType, prop.Key);
+                       SetPropValue(target, targetType,prop.Value,value);
                     }
                     catch (Exception)
                     {
