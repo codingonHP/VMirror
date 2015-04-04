@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomAttributes\VMapperAttributes.cs" />
+    <Compile Include="Framework\Handler.cs" />
+    <Compile Include="Framework\HandlerOutput.cs" />
     <Compile Include="Settings\Constants.cs" />
     <Compile Include="Extension\Extension.cs" />
     <Compile Include="Private\Api.cs" />

@@ -1,0 +1,2525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DVPC_Fresh_DevModelStoreContainer" CdmEntityContainer="DVPC_Fresh_DevEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditEmailSendBoxes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.AuditEmailSendBox">
+        <MappingFragment StoreEntitySet="AuditEmailSendBox">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmailTriggersId" ColumnName="EmailTriggersId" />
+          <ScalarProperty Name="From" ColumnName="From" />
+          <ScalarProperty Name="To" ColumnName="To" />
+          <ScalarProperty Name="Cc" ColumnName="Cc" />
+          <ScalarProperty Name="Bcc" ColumnName="Bcc" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="AttachmentPath" ColumnName="AttachmentPath" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditExceptions">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.AuditException">
+        <MappingFragment StoreEntitySet="AuditExceptions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HelpLink" ColumnName="HelpLink" />
+          <ScalarProperty Name="HResult" ColumnName="HResult" />
+          <ScalarProperty Name="ParentExceptionId" ColumnName="ParentExceptionId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="TargetSite" ColumnName="TargetSite" />
+          <ScalarProperty Name="Stacktrace" ColumnName="Stacktrace" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditLogins">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.AuditLogin">
+        <MappingFragment StoreEntitySet="AuditLogins">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="BrowserType" ColumnName="BrowserType" />
+          <ScalarProperty Name="BrowserName" ColumnName="BrowserName" />
+          <ScalarProperty Name="BrowserVersion" ColumnName="BrowserVersion" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="SupportsJavaScript" ColumnName="SupportsJavaScript" />
+          <ScalarProperty Name="SupportsCookies" ColumnName="SupportsCookies" />
+          <ScalarProperty Name="SupportsActiveXControls" ColumnName="SupportsActiveXControls" />
+          <ScalarProperty Name="AbsoluteUri" ColumnName="AbsoluteUri" />
+          <ScalarProperty Name="CallBack" ColumnName="CallBack" />
+          <ScalarProperty Name="ClientAppId" ColumnName="ClientAppId" />
+          <ScalarProperty Name="ClientSecretCode" ColumnName="ClientSecretCode" />
+          <ScalarProperty Name="LoginScops" ColumnName="LoginScops" />
+          <ScalarProperty Name="isGrant" ColumnName="isGrant" />
+          <ScalarProperty Name="LoginDate" ColumnName="LoginDate" />
+          <ScalarProperty Name="LoginStatus" ColumnName="LoginStatus" />
+          <ScalarProperty Name="GrantDate" ColumnName="GrantDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryLogs">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.CategoryLog">
+        <MappingFragment StoreEntitySet="CategoryLog">
+          <ScalarProperty Name="CategoryLogID" ColumnName="CategoryLogID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CnfgAppSettings">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.CnfgAppSetting">
+        <MappingFragment StoreEntitySet="CnfgAppSettings">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.Log">
+        <MappingFragment StoreEntitySet="Log">
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Severity" ColumnName="Severity" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="AppDomainName" ColumnName="AppDomainName" />
+          <ScalarProperty Name="ProcessID" ColumnName="ProcessID" />
+          <ScalarProperty Name="ProcessName" ColumnName="ProcessName" />
+          <ScalarProperty Name="ThreadName" ColumnName="ThreadName" />
+          <ScalarProperty Name="Win32ThreadId" ColumnName="Win32ThreadId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="FormattedMessage" ColumnName="FormattedMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstAddonFees">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstAddonFee">
+        <MappingFragment StoreEntitySet="MstAddonFees">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FeeType" ColumnName="FeeType" />
+          <ScalarProperty Name="FeeDescripition" ColumnName="FeeDescripition" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstAddresses">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstAddress">
+        <MappingFragment StoreEntitySet="MstAddress">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="TelephoneNo1" ColumnName="TelephoneNo1" />
+          <ScalarProperty Name="TelephoneNo2" ColumnName="TelephoneNo2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstAirlines">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstAirline">
+        <MappingFragment StoreEntitySet="MstAirline">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AirlineParentId" ColumnName="AirlineParentId" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstAirlineParents">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstAirlineParent">
+        <MappingFragment StoreEntitySet="MstAirlineParent">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstAirports">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstAirport">
+        <MappingFragment StoreEntitySet="MstAirport">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AirportName" ColumnName="AirportName" />
+          <ScalarProperty Name="AirportCode" ColumnName="AirportCode" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstB2BDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstB2BDetails">
+        <MappingFragment StoreEntitySet="MstB2BDetails">
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="PaymentMethods" ColumnName="PaymentMethods" />
+          <ScalarProperty Name="PaymentTerms" ColumnName="PaymentTerms" />
+          <ScalarProperty Name="AlternatePayee" ColumnName="AlternatePayee" />
+          <ScalarProperty Name="PANNo" ColumnName="PANNo" />
+          <ScalarProperty Name="ExemptionNo" ColumnName="ExemptionNo" />
+          <ScalarProperty Name="WTaxCode" ColumnName="WTaxCode" />
+          <ScalarProperty Name="ValidUntil" ColumnName="ValidUntil" />
+          <ScalarProperty Name="VATRegnNo" ColumnName="VATRegnNo" />
+          <ScalarProperty Name="ServiceTaxRegnNo" ColumnName="ServiceTaxRegnNo" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="ContactTelephone" ColumnName="ContactTelephone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstB2BDomesticBankDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstB2BDomesticBankDetails">
+        <MappingFragment StoreEntitySet="MstB2BDomesticBankDetails">
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="IFSC" ColumnName="IFSC" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NFTMICRNo" ColumnName="NFTMICRNo" />
+          <ScalarProperty Name="BankNameAddress" ColumnName="BankNameAddress" />
+          <ScalarProperty Name="SwiftCode" ColumnName="SwiftCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstB2BForeignSupplierBankDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstB2BForeignSupplierBankDetails">
+        <MappingFragment StoreEntitySet="MstB2BForeignSupplierBankDetails">
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="IbanCode" ColumnName="IbanCode" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstB2BOnLineSubmitDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstB2BOnLineSubmitDetails">
+        <MappingFragment StoreEntitySet="MstB2BOnLineSubmitDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TravelAgentName" ColumnName="TravelAgentName" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="TelephoneNo1" ColumnName="TelephoneNo1" />
+          <ScalarProperty Name="TelephoneNo2" ColumnName="TelephoneNo2" />
+          <ScalarProperty Name="PaymentMethods" ColumnName="PaymentMethods" />
+          <ScalarProperty Name="PaymentTerms" ColumnName="PaymentTerms" />
+          <ScalarProperty Name="AlternatePayee" ColumnName="AlternatePayee" />
+          <ScalarProperty Name="PANNo" ColumnName="PANNo" />
+          <ScalarProperty Name="ExemptionNo" ColumnName="ExemptionNo" />
+          <ScalarProperty Name="WTaxCode" ColumnName="WTaxCode" />
+          <ScalarProperty Name="ValidUntil" ColumnName="ValidUntil" />
+          <ScalarProperty Name="VATRegnNo" ColumnName="VATRegnNo" />
+          <ScalarProperty Name="ServiceTaxRegnNo" ColumnName="ServiceTaxRegnNo" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="ContactTelephone" ColumnName="ContactTelephone" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="IsProcessed" ColumnName="IsProcessed" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="VACId" ColumnName="VACId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstB2BOnLineSubmitDomesticBankDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstB2BOnLineSubmitDomesticBankDetails">
+        <MappingFragment StoreEntitySet="MstB2BOnLineSubmitDomesticBankDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="B2BOnlineDetailsId" ColumnName="B2BOnlineDetailsId" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="IFSC" ColumnName="IFSC" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NFTMICRNo" ColumnName="NFTMICRNo" />
+          <ScalarProperty Name="BankNameAddress" ColumnName="BankNameAddress" />
+          <ScalarProperty Name="SwiftCode" ColumnName="SwiftCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstB2BOnLineSubmitForeignSupplierBankDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstB2BOnLineSubmitForeignSupplierBankDetails">
+        <MappingFragment StoreEntitySet="MstB2BOnLineSubmitForeignSupplierBankDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="B2BOnlineDetailsId" ColumnName="B2BOnlineDetailsId" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="IbanCode" ColumnName="IbanCode" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstBanks">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstBank">
+        <MappingFragment StoreEntitySet="MstBank">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstCashCounterRemarks">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstCashCounterRemark">
+        <MappingFragment StoreEntitySet="MstCashCounterRemarks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstCheckLists">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstCheckList">
+        <MappingFragment StoreEntitySet="MstCheckList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstCheckListForStatus">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstCheckListForStatu">
+        <MappingFragment StoreEntitySet="MstCheckListForStatus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="CheckListID" ColumnName="CheckListID" />
+          <ScalarProperty Name="OCID" ColumnName="OCID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstCities">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstCity">
+        <MappingFragment StoreEntitySet="MstCity">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstCityByOCACs">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstCityByOCAC">
+        <MappingFragment StoreEntitySet="MstCityByOCAC">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+          <ScalarProperty Name="VACId" ColumnName="VACId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstClientApplicationCredentials">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstClientApplicationCredential">
+        <MappingFragment StoreEntitySet="MstClientApplicationCredentials">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AppId" ColumnName="AppId" />
+          <ScalarProperty Name="SecretCode" ColumnName="SecretCode" />
+          <ScalarProperty Name="ClientApplicationTypeId" ColumnName="ClientApplicationTypeId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstClientApplicationTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstClientApplicationType">
+        <MappingFragment StoreEntitySet="MstClientApplicationType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RedirectUrl" ColumnName="RedirectUrl" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstCountries">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstCountry">
+        <MappingFragment StoreEntitySet="MstCountry">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstCurrencies">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstCurrency">
+        <MappingFragment StoreEntitySet="MstCurrency">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Symbol" ColumnName="Symbol" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstCustomerTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstCustomerType">
+        <MappingFragment StoreEntitySet="MstCustomerType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsService" ColumnName="IsService" />
+          <ScalarProperty Name="IsCashCounter" ColumnName="IsCashCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstDDLocations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstDDLocation">
+        <MappingFragment StoreEntitySet="MstDDLocation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstDocumentTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstDocumentType">
+        <MappingFragment StoreEntitySet="MstDocumentType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AllowedFileSize" ColumnName="AllowedFileSize" />
+          <ScalarProperty Name="AllowedMaxFileSize" ColumnName="AllowedMaxFileSize" />
+          <ScalarProperty Name="Extensions" ColumnName="Extensions" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstEducations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstEducation">
+        <MappingFragment StoreEntitySet="MstEducation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstEKAdditionalCharges">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstEKAdditionalCharge">
+        <MappingFragment StoreEntitySet="MstEKAdditionalCharges">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VisaTermId" ColumnName="VisaTermId" />
+          <ScalarProperty Name="IsSecurityDeposit" ColumnName="IsSecurityDeposit" />
+          <ScalarProperty Name="IsExpressVisa" ColumnName="IsExpressVisa" />
+          <ScalarProperty Name="ServiceFees" ColumnName="ServiceFees" />
+          <ScalarProperty Name="VATAmount" ColumnName="VATAmount" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstEKPages">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstEKPage">
+        <MappingFragment StoreEntitySet="MstEKPages">
+          <ScalarProperty Name="PageNo" ColumnName="PageNo" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstEmailTemplateForPromotions">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstEmailTemplateForPromotion">
+        <MappingFragment StoreEntitySet="MstEmailTemplateForPromotion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PromotionTypeCodeId" ColumnName="PromotionTypeCodeId" />
+          <ScalarProperty Name="EmailTemplatesId" ColumnName="EmailTemplatesId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstEmailTemplates">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstEmailTemplate">
+        <MappingFragment StoreEntitySet="MstEmailTemplates">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmailTemplateName" ColumnName="EmailTemplateName" />
+          <ScalarProperty Name="FromMail" ColumnName="FromMail" />
+          <ScalarProperty Name="ToMail" ColumnName="ToMail" />
+          <ScalarProperty Name="CC" ColumnName="CC" />
+          <ScalarProperty Name="Bcc" ColumnName="Bcc" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="BodyHeader" ColumnName="BodyHeader" />
+          <ScalarProperty Name="BodyFooter" ColumnName="BodyFooter" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="AttachmentPath" ColumnName="AttachmentPath" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Signature" ColumnName="Signature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstExpressVisaFees">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstExpressVisaFee">
+        <MappingFragment StoreEntitySet="MstExpressVisaFees">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ExpressVisaFee" ColumnName="ExpressVisaFee" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstFeeTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstFeeType">
+        <MappingFragment StoreEntitySet="MstFeeType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstGenders">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstGender">
+        <MappingFragment StoreEntitySet="MstGender">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstHighRiskCountries">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstHighRiskCountry">
+        <MappingFragment StoreEntitySet="MstHighRiskCountry">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DepositAmount" ColumnName="DepositAmount" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="NationalityId" ColumnName="NationalityId" />
+          <ScalarProperty Name="DepositWithVAT" ColumnName="DepositWithVAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstHolidays">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstHoliday">
+        <MappingFragment StoreEntitySet="MstHoliday">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HolidayType" ColumnName="HolidayType" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstHolidayTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstHolidayType">
+        <MappingFragment StoreEntitySet="MstHolidayType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstInformationBars">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstInformationBar">
+        <MappingFragment StoreEntitySet="MstInformationBar">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstInstrumentTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstInstrumentType">
+        <MappingFragment StoreEntitySet="MstInstrumentType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsOnline" ColumnName="IsOnline" />
+          <ScalarProperty Name="IsOffline" ColumnName="IsOffline" />
+          <ScalarProperty Name="IsService" ColumnName="IsService" />
+          <ScalarProperty Name="IsCashCounter" ColumnName="IsCashCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstInstrumentTypeInCustomerTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstInstrumentTypeInCustomerType">
+        <MappingFragment StoreEntitySet="MstInstrumentTypeInCustomerType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="InstrumentTypeId" ColumnName="InstrumentTypeId" />
+          <ScalarProperty Name="CustomerTypeId" ColumnName="CustomerTypeId" />
+          <ScalarProperty Name="IsService" ColumnName="IsService" />
+          <ScalarProperty Name="IsCashCounter" ColumnName="IsCashCounter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstIssuingGovts">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstIssuingGovt">
+        <MappingFragment StoreEntitySet="MstIssuingGovt">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstLanguages">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstLanguage">
+        <MappingFragment StoreEntitySet="MstLanguage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstLanguageInOCs">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstLanguageInOC">
+        <MappingFragment StoreEntitySet="MstLanguageInOC">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstLedgerTransactionTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstLedgerTransactionType">
+        <MappingFragment StoreEntitySet="MstLedgerTransactionType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstMartialStatus">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstMartialStatu">
+        <MappingFragment StoreEntitySet="MstMartialStatus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstMenus">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstMenu">
+        <MappingFragment StoreEntitySet="MstMenu">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="SlOrder" ColumnName="SlOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstMenuSubMenuMappings">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstMenuSubMenuMapping">
+        <MappingFragment StoreEntitySet="MstMenuSubMenuMapping">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+          <ScalarProperty Name="SubMenuId" ColumnName="SubMenuId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstMerchantDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstMerchantDetail">
+        <MappingFragment StoreEntitySet="MstMerchantDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="MerchantTypeID" ColumnName="MerchantTypeID" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstMerchantTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstMerchantType">
+        <MappingFragment StoreEntitySet="MstMerchantType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstMerchantTypeStageAssociations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstMerchantTypeStageAssociation">
+        <MappingFragment StoreEntitySet="MstMerchantTypeStageAssociation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MerchantTypeId" ColumnName="MerchantTypeId" />
+          <ScalarProperty Name="StageId" ColumnName="StageId" />
+          <ScalarProperty Name="OrderOfStage" ColumnName="OrderOfStage" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstMissions">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstMission">
+        <MappingFragment StoreEntitySet="MstMission">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstNationalities">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstNationality">
+        <MappingFragment StoreEntitySet="MstNationality">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsArabicCountry" ColumnName="IsArabicCountry" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="IsVisaOnArrival" ColumnName="IsVisaOnArrival" />
+          <ScalarProperty Name="IsEKOnline" ColumnName="IsEKOnline" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstNewsAndNotices">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstNewsAndNotice">
+        <MappingFragment StoreEntitySet="MstNewsAndNotice">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstOCs">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstOC">
+        <MappingFragment StoreEntitySet="MstOC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsEKOnLine" ColumnName="IsEKOnLine" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstOfflineRoles">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstOfflineRole">
+        <MappingFragment StoreEntitySet="MstOfflineRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UserTypeId" ColumnName="UserTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstPassportTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstPassportType">
+        <MappingFragment StoreEntitySet="MstPassportType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstPaymentGateWays">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstPaymentGateWay">
+        <MappingFragment StoreEntitySet="MstPaymentGateWay">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MerchantID" ColumnName="MerchantID" />
+          <ScalarProperty Name="MerchantPassword" ColumnName="MerchantPassword" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="RefundURL" ColumnName="RefundURL" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstPFCCharges">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstPFCCharge">
+        <MappingFragment StoreEntitySet="MstPFCCharges">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+          <ScalarProperty Name="InstrumentTypeId" ColumnName="InstrumentTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstPNRPromotionCodes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstPNRPromotionCode">
+        <MappingFragment StoreEntitySet="MstPNRPromotionCode">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PromotionTypeCodeId" ColumnName="PromotionTypeCodeId" />
+          <ScalarProperty Name="EmailTemplateForPromotionId" ColumnName="EmailTemplateForPromotionId" />
+          <ScalarProperty Name="PromotionCode" ColumnName="PromotionCode" />
+          <ScalarProperty Name="PNRNumber" ColumnName="PNRNumber" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="ValidityPeriod" ColumnName="ValidityPeriod" />
+          <ScalarProperty Name="IsFreeVisa" ColumnName="IsFreeVisa" />
+          <ScalarProperty Name="DiscountPercentage" ColumnName="DiscountPercentage" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Signature" ColumnName="Signature" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstProfessions">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstProfession">
+        <MappingFragment StoreEntitySet="MstProfession">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstPromotionCodeTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstPromotionCodeType">
+        <MappingFragment StoreEntitySet="MstPromotionCodeType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ValidityPeriod" ColumnName="ValidityPeriod" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OcId" ColumnName="OcId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstPurposeOfVisits">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstPurposeOfVisit">
+        <MappingFragment StoreEntitySet="MstPurposeOfVisit">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstRefundModes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstRefundMode">
+        <MappingFragment StoreEntitySet="MstRefundModes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstRelationShips">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstRelationShip">
+        <MappingFragment StoreEntitySet="MstRelationShip">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsGratis" ColumnName="IsGratis" />
+          <ScalarProperty Name="SlOrder" ColumnName="SlOrder" />
+          <ScalarProperty Name="IsEkOnline" ColumnName="IsEkOnline" />
+          <ScalarProperty Name="IsB2bOnline" ColumnName="IsB2bOnline" />
+          <ScalarProperty Name="IsVacOnline" ColumnName="IsVacOnline" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstReligions">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstReligion">
+        <MappingFragment StoreEntitySet="MstReligion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstSalutations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstSalutation">
+        <MappingFragment StoreEntitySet="MstSalutation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SlOrder" ColumnName="SlOrder" />
+          <ScalarProperty Name="IsEkOnline" ColumnName="IsEkOnline" />
+          <ScalarProperty Name="IsB2bOnline" ColumnName="IsB2bOnline" />
+          <ScalarProperty Name="IsVacOnline" ColumnName="IsVacOnline" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstServiceRatings">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstServiceRating">
+        <MappingFragment StoreEntitySet="MstServiceRating">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstServiceTaxes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstServiceTax">
+        <MappingFragment StoreEntitySet="MstServiceTax">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TaxNumber" ColumnName="TaxNumber" />
+          <ScalarProperty Name="TaxInPercentage" ColumnName="TaxInPercentage" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstSkywardMemberTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstSkywardMemberType">
+        <MappingFragment StoreEntitySet="MstSkywardMemberType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstStages">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstStage">
+        <MappingFragment StoreEntitySet="MstStage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsOnline" ColumnName="IsOnline" />
+          <ScalarProperty Name="Slorder" ColumnName="Slorder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstStates">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstState">
+        <MappingFragment StoreEntitySet="MstState">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OcId" ColumnName="OcId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstStatusAssesmentAppraisals">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstStatusAssesmentAppraisal">
+        <MappingFragment StoreEntitySet="MstStatusAssesmentAppraisal">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsAssesment" ColumnName="IsAssesment" />
+          <ScalarProperty Name="IsAppraisal" ColumnName="IsAppraisal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstSubMenus">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstSubMenu">
+        <MappingFragment StoreEntitySet="MstSubMenu">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ActionName" ColumnName="ActionName" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="SlOrder" ColumnName="SlOrder" />
+          <ScalarProperty Name="ReportId" ColumnName="ReportId" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstSubMenuUserTypeMappings">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstSubMenuUserTypeMapping">
+        <MappingFragment StoreEntitySet="MstSubMenuUserTypeMapping">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MenuMappingId" ColumnName="MenuMappingId" />
+          <ScalarProperty Name="UserTypeId" ColumnName="UserTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstTargetYTDs">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstTargetYTD">
+        <MappingFragment StoreEntitySet="MstTargetYTD">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="VACId" ColumnName="VACId" />
+          <ScalarProperty Name="AirlineId" ColumnName="AirlineId" />
+          <ScalarProperty Name="Jan" ColumnName="Jan" />
+          <ScalarProperty Name="Feb" ColumnName="Feb" />
+          <ScalarProperty Name="Mar" ColumnName="Mar" />
+          <ScalarProperty Name="Apr" ColumnName="Apr" />
+          <ScalarProperty Name="May" ColumnName="May" />
+          <ScalarProperty Name="Jun" ColumnName="Jun" />
+          <ScalarProperty Name="Jul" ColumnName="Jul" />
+          <ScalarProperty Name="Aug" ColumnName="Aug" />
+          <ScalarProperty Name="Sep" ColumnName="Sep" />
+          <ScalarProperty Name="Oct" ColumnName="Oct" />
+          <ScalarProperty Name="Nov" ColumnName="Nov" />
+          <ScalarProperty Name="Dec" ColumnName="Dec" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstTravelAgents">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstTravelAgent">
+        <MappingFragment StoreEntitySet="MstTravelAgent">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RegisterNo" ColumnName="RegisterNo" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="TravelAgencyName" ColumnName="TravelAgencyName" />
+          <ScalarProperty Name="NameOwner" ColumnName="NameOwner" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="DepositAmountTotal" ColumnName="DepositAmountTotal" />
+          <ScalarProperty Name="DepositAmountBalance" ColumnName="DepositAmountBalance" />
+          <ScalarProperty Name="ThresholdAmount" ColumnName="ThresholdAmount" />
+          <ScalarProperty Name="CreditAmountApproved" ColumnName="CreditAmountApproved" />
+          <ScalarProperty Name="CreditAmountUsed" ColumnName="CreditAmountUsed" />
+          <ScalarProperty Name="TravelAgentTypeID" ColumnName="TravelAgentTypeID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="OCID" ColumnName="OCID" />
+          <ScalarProperty Name="VACID" ColumnName="VACID" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsCreditAllowed" ColumnName="IsCreditAllowed" />
+          <ScalarProperty Name="IsIndemnity" ColumnName="IsIndemnity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstTravelAgentGroups">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstTravelAgentGroup">
+        <MappingFragment StoreEntitySet="MstTravelAgentGroup">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ThresholdAmount" ColumnName="ThresholdAmount" />
+          <ScalarProperty Name="DepositAmountTotal" ColumnName="DepositAmountTotal" />
+          <ScalarProperty Name="DepositAmountBalance" ColumnName="DepositAmountBalance" />
+          <ScalarProperty Name="CreditAmountApproved" ColumnName="CreditAmountApproved" />
+          <ScalarProperty Name="CreditAmountUsed" ColumnName="CreditAmountUsed" />
+          <ScalarProperty Name="DepositInstrumentTypeId" ColumnName="DepositInstrumentTypeId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ApprovedDateTime" ColumnName="ApprovedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstTravelAgentTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstTravelAgentType">
+        <MappingFragment StoreEntitySet="MstTravelAgentType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstTravelTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstTravelType">
+        <MappingFragment StoreEntitySet="MstTravelType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstUserAssociations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstUserAssociation">
+        <MappingFragment StoreEntitySet="MstUserAssociation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AspNetUsersId" ColumnName="AspNetUsersId" />
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="VacId" ColumnName="VacId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OCId" ColumnName="OCId" />
+          <ScalarProperty Name="PasswordResetedDate" ColumnName="PasswordResetedDate" />
+          <ScalarProperty Name="TravelAgentGroupId" ColumnName="TravelAgentGroupId" />
+          <ScalarProperty Name="UserTypeId" ColumnName="UserTypeId" />
+          <ScalarProperty Name="UserFullName" ColumnName="UserFullName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstUserRoleMappings">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstUserRoleMapping">
+        <MappingFragment StoreEntitySet="MstUserRoleMapping">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="OfflineRoleId" ColumnName="OfflineRoleId" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstUserTypes">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstUserType">
+        <MappingFragment StoreEntitySet="MstUserType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstVACs">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstVAC">
+        <MappingFragment StoreEntitySet="MstVAC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="TimeOffSet" ColumnName="TimeOffSet" />
+          <ScalarProperty Name="IsEKOnLine" ColumnName="IsEKOnLine" />
+          <ScalarProperty Name="EmailDisplayName" ColumnName="EmailDisplayName" />
+          <ScalarProperty Name="CCEmail" ColumnName="CCEmail" />
+          <ScalarProperty Name="BCCEmail" ColumnName="BCCEmail" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="CCEmailDisplayName" ColumnName="CCEmailDisplayName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstVACAddOnFeesAssociations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstVACAddOnFeesAssociation">
+        <MappingFragment StoreEntitySet="MstVACAddOnFeesAssociation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AddOnFeeId" ColumnName="AddOnFeeId" />
+          <ScalarProperty Name="VacId" ColumnName="VacId" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstVAS">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstVA">
+        <MappingFragment StoreEntitySet="MstVAS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstVASVACAssociations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstVASVACAssociation">
+        <MappingFragment StoreEntitySet="MstVASVACAssociation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VASId" ColumnName="VASId" />
+          <ScalarProperty Name="VACId" ColumnName="VACId" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstVATs">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstVAT">
+        <MappingFragment StoreEntitySet="MstVAT">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VATInPercentage" ColumnName="VATInPercentage" />
+          <ScalarProperty Name="RegNo" ColumnName="RegNo" />
+          <ScalarProperty Name="VATAmount" ColumnName="VATAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstVisaTerms">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstVisaTerm">
+        <MappingFragment StoreEntitySet="MstVisaTerm">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="IsHours" ColumnName="IsHours" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstVisaTermDurations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstVisaTermDuration">
+        <MappingFragment StoreEntitySet="MstVisaTermDuration">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="IsHours" ColumnName="IsHours" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstVisaTermFees">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstVisaTermFee">
+        <MappingFragment StoreEntitySet="MstVisaTermFee">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VisaTermID" ColumnName="VisaTermID" />
+          <ScalarProperty Name="VACID" ColumnName="VACID" />
+          <ScalarProperty Name="AirlineID" ColumnName="AirlineID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="VisaFee" ColumnName="VisaFee" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstVisaTermInVisaTermDurations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstVisaTermInVisaTermDuration">
+        <MappingFragment StoreEntitySet="MstVisaTermInVisaTermDuration">
+          <ScalarProperty Name="VisaTermDurationId" ColumnName="VisaTermDurationId" />
+          <ScalarProperty Name="VisaTermId" ColumnName="VisaTermId" />
+          <ScalarProperty Name="IsEkOnline" ColumnName="IsEkOnline" />
+          <ScalarProperty Name="IsB2b" ColumnName="IsB2b" />
+          <ScalarProperty Name="IsVacOnline" ColumnName="IsVacOnline" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstVOCFeedbacks">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstVOCFeedback">
+        <MappingFragment StoreEntitySet="MstVOCFeedback">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LinkSent" ColumnName="LinkSent" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="RatingId" ColumnName="RatingId" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ReceivedDateTime" ColumnName="ReceivedDateTime" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MstVOCMstRatings">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.MstVOCMstRating">
+        <MappingFragment StoreEntitySet="MstVOCMstRating">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmpSubMenus">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.tmpSubMenu">
+        <MappingFragment StoreEntitySet="tmpSubMenus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ActionName" ColumnName="ActionName" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="SlOrder" ColumnName="SlOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnAdditionalCharges">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnAdditionalCharge">
+        <MappingFragment StoreEntitySet="TrnAdditionalCharges">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantGroupId" ColumnName="ApplicantGroupId" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="HighRiskCountryDepositAmount" ColumnName="HighRiskCountryDepositAmount" />
+          <ScalarProperty Name="ExpressVisaAmount" ColumnName="ExpressVisaAmount" />
+          <ScalarProperty Name="VATAmount" ColumnName="VATAmount" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="VATPercentage" ColumnName="VATPercentage" />
+          <ScalarProperty Name="ServiceFees" ColumnName="ServiceFees" />
+          <ScalarProperty Name="VATAmountForVAS" ColumnName="VATAmountForVAS" />
+          <ScalarProperty Name="DepositWithVAT" ColumnName="DepositWithVAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnApplicableVisaFees">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnApplicableVisaFee">
+        <MappingFragment StoreEntitySet="TrnApplicableVisaFees">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VisaTemFeeId" ColumnName="VisaTemFeeId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnApplicants">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnApplicant">
+        <MappingFragment StoreEntitySet="TrnApplicant">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="WebRefNo" ColumnName="WebRefNo" />
+          <ScalarProperty Name="AppRefNo" ColumnName="AppRefNo" />
+          <ScalarProperty Name="VafId" ColumnName="VafId" />
+          <ScalarProperty Name="SkyWardNo" ColumnName="SkyWardNo" />
+          <ScalarProperty Name="PromotionCode" ColumnName="PromotionCode" />
+          <ScalarProperty Name="IsPriorty" ColumnName="IsPriorty" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="StageId" ColumnName="StageId" />
+          <ScalarProperty Name="ExpectedReturnDate" ColumnName="ExpectedReturnDate" />
+          <ScalarProperty Name="ActualReturnDate" ColumnName="ActualReturnDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="VCNNo" ColumnName="VCNNo" />
+          <ScalarProperty Name="VCNDate" ColumnName="VCNDate" />
+          <ScalarProperty Name="DiscountId" ColumnName="DiscountId" />
+          <ScalarProperty Name="IsOverStaying" ColumnName="IsOverStaying" />
+          <ScalarProperty Name="OverStayMarkedOn" ColumnName="OverStayMarkedOn" />
+          <ScalarProperty Name="IsSelected" ColumnName="IsSelected" />
+          <ScalarProperty Name="isVAFCompleted" ColumnName="isVAFCompleted" />
+          <ScalarProperty Name="isUploadDocumentsCompleted" ColumnName="isUploadDocumentsCompleted" />
+          <ScalarProperty Name="EKPageNo" ColumnName="EKPageNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnApplicantAddresses">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnApplicantAddress">
+        <MappingFragment StoreEntitySet="TrnApplicantAddress">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+          <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+          <ScalarProperty Name="UAEName" ColumnName="UAEName" />
+          <ScalarProperty Name="UAERelationShip" ColumnName="UAERelationShip" />
+          <ScalarProperty Name="UAEIsHotelStay" ColumnName="UAEIsHotelStay" />
+          <ScalarProperty Name="UAEHotelName" ColumnName="UAEHotelName" />
+          <ScalarProperty Name="UAECity" ColumnName="UAECity" />
+          <ScalarProperty Name="UAEPhoneNo" ColumnName="UAEPhoneNo" />
+          <ScalarProperty Name="UAEMobileNo" ColumnName="UAEMobileNo" />
+          <ScalarProperty Name="UAEPoBox" ColumnName="UAEPoBox" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnApplicantArabics">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnApplicantArabic">
+        <MappingFragment StoreEntitySet="TrnApplicantArabic">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+          <ScalarProperty Name="SpouseName" ColumnName="SpouseName" />
+          <ScalarProperty Name="PlaceOfBirth" ColumnName="PlaceOfBirth" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnApplicantCheckLists">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnApplicantCheckList">
+        <MappingFragment StoreEntitySet="TrnApplicantCheckList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="ChecklistForStatusId" ColumnName="ChecklistForStatusId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnApplicantEmployerDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnApplicantEmployerDetail">
+        <MappingFragment StoreEntitySet="TrnApplicantEmployerDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NameOfBusinessOrEmployer" ColumnName="NameOfBusinessOrEmployer" />
+          <ScalarProperty Name="AddressOfBusinessOrEmployer" ColumnName="AddressOfBusinessOrEmployer" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ResignationDate" ColumnName="ResignationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CretaedDate" ColumnName="CretaedDate" />
+          <ScalarProperty Name="ModifedBy" ColumnName="ModifedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnApplicantLatestTrans">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnApplicantLatestTran">
+        <MappingFragment StoreEntitySet="TrnApplicantLatestTrans">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnApplicantPageHistories">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnApplicantPageHistory">
+        <MappingFragment StoreEntitySet="TrnApplicantPageHistory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="PageNo" ColumnName="PageNo" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnApplicantPassportDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnApplicantPassportDetail">
+        <MappingFragment StoreEntitySet="TrnApplicantPassportDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PassportNo" ColumnName="PassportNo" />
+          <ScalarProperty Name="PassportExpiryDate" ColumnName="PassportExpiryDate" />
+          <ScalarProperty Name="PassportTypeId" ColumnName="PassportTypeId" />
+          <ScalarProperty Name="IssuingGovtId" ColumnName="IssuingGovtId" />
+          <ScalarProperty Name="PlaceOfIssue" ColumnName="PlaceOfIssue" />
+          <ScalarProperty Name="DateOfIssue" ColumnName="DateOfIssue" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IssuingNationalityId" ColumnName="IssuingNationalityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnApplicantSearchComments">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnApplicantSearchComment">
+        <MappingFragment StoreEntitySet="TrnApplicantSearchComments">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnApplicantsGroups">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnApplicantsGroup">
+        <MappingFragment StoreEntitySet="TrnApplicantsGroup">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VacId" ColumnName="VacId" />
+          <ScalarProperty Name="ItineraryId" ColumnName="ItineraryId" />
+          <ScalarProperty Name="VisaTermFeeId" ColumnName="VisaTermFeeId" />
+          <ScalarProperty Name="CustomerTypeId" ColumnName="CustomerTypeId" />
+          <ScalarProperty Name="UserAssociationId" ColumnName="UserAssociationId" />
+          <ScalarProperty Name="VisaTermId" ColumnName="VisaTermId" />
+          <ScalarProperty Name="TravelTypeId" ColumnName="TravelTypeId" />
+          <ScalarProperty Name="IsPriorty" ColumnName="IsPriorty" />
+          <ScalarProperty Name="NoOfApplicants" ColumnName="NoOfApplicants" />
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="PromotionCodeId" ColumnName="PromotionCodeId" />
+          <ScalarProperty Name="GratisCount" ColumnName="GratisCount" />
+          <ScalarProperty Name="IsB2b" ColumnName="IsB2b" />
+          <ScalarProperty Name="IsVacOnline" ColumnName="IsVacOnline" />
+          <ScalarProperty Name="IsEkOnline" ColumnName="IsEkOnline" />
+          <ScalarProperty Name="ParentGroupId" ColumnName="ParentGroupId" />
+          <ScalarProperty Name="IsMobile" ColumnName="IsMobile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnApplicantsGroupStageHistories">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnApplicantsGroupStageHistory">
+        <MappingFragment StoreEntitySet="TrnApplicantsGroupStageHistory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="StageId" ColumnName="StageId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnAppraisalAndDNRDs">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnAppraisalAndDNRD">
+        <MappingFragment StoreEntitySet="TrnAppraisalAndDNRD">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="StatusAssesmentAppraisalId" ColumnName="StatusAssesmentAppraisalId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="LasteMailSentDateTime" ColumnName="LasteMailSentDateTime" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="StageID" ColumnName="StageID" />
+          <ScalarProperty Name="ReminderCount" ColumnName="ReminderCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnAppraisalCheckLists">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnAppraisalCheckList">
+        <MappingFragment StoreEntitySet="TrnAppraisalCheckList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AppraisalAndDNRDId" ColumnName="AppraisalAndDNRDId" />
+          <ScalarProperty Name="CheckListId" ColumnName="CheckListId" />
+          <ScalarProperty Name="DocumentTypeId" ColumnName="DocumentTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnAppraisalSystemPendings">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnAppraisalSystemPending">
+        <MappingFragment StoreEntitySet="TrnAppraisalSystemPending">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AppraisalVersion" ColumnName="AppraisalVersion" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="SystemPendingDateTime" ColumnName="SystemPendingDateTime" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="AppraisalId" ColumnName="AppraisalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnAssessments">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnAssessment">
+        <MappingFragment StoreEntitySet="TrnAssessment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantGroupId" ColumnName="ApplicantGroupId" />
+          <ScalarProperty Name="AssessmentStatusId" ColumnName="AssessmentStatusId" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ReversalLedgerId" ColumnName="ReversalLedgerId" />
+          <ScalarProperty Name="LockedDate" ColumnName="LockedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnCarts">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnCart">
+        <MappingFragment StoreEntitySet="TrnCart">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="IsPaymentCompleted" ColumnName="IsPaymentCompleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsAssessmentCompleted" ColumnName="IsAssessmentCompleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnCashCounters">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnCashCounter">
+        <MappingFragment StoreEntitySet="TrnCashCounter">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InstrumentPaymentId" ColumnName="InstrumentPaymentId" />
+          <ScalarProperty Name="VACId" ColumnName="VACId" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="IsCancelled" ColumnName="IsCancelled" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="RemarksId" ColumnName="RemarksId" />
+          <ScalarProperty Name="CashReceiptNo" ColumnName="CashReceiptNo" />
+          <ScalarProperty Name="IsUsed" ColumnName="IsUsed" />
+          <ScalarProperty Name="GroupPaymentDetailsId" ColumnName="GroupPaymentDetailsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnDiscountForVisaTermFeeTravelAgentGroupVACs">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnDiscountForVisaTermFeeTravelAgentGroupVAC">
+        <MappingFragment StoreEntitySet="TrnDiscountForVisaTermFeeTravelAgentGroupVAC">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VisaTermId" ColumnName="VisaTermId" />
+          <ScalarProperty Name="TraveLAgentId" ColumnName="TraveLAgentId" />
+          <ScalarProperty Name="TravelAgentGroupId" ColumnName="TravelAgentGroupId" />
+          <ScalarProperty Name="VACId" ColumnName="VACId" />
+          <ScalarProperty Name="NumberOfVisa" ColumnName="NumberOfVisa" />
+          <ScalarProperty Name="NumberOfVisaDiscountGiven" ColumnName="NumberOfVisaDiscountGiven" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ValidityPeriod" ColumnName="ValidityPeriod" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDiscountPercent" ColumnName="IsDiscountPercent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnDocumentDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnDocumentDetail">
+        <MappingFragment StoreEntitySet="TrnDocumentDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="DocumentTypeId" ColumnName="DocumentTypeId" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="SharepointLink" ColumnName="SharepointLink" />
+          <ScalarProperty Name="IsUploaded" ColumnName="IsUploaded" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="FileStreamId" ColumnName="FileStreamId" />
+          <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnEKApplicantItineraryAssociations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnEKApplicantItineraryAssociation">
+        <MappingFragment StoreEntitySet="TrnEKApplicantItineraryAssociation">
+          <ScalarProperty Name="ItineraryGroupId" ColumnName="ItineraryGroupId" />
+          <ScalarProperty Name="OriginalApplicantId" ColumnName="OriginalApplicantId" />
+          <ScalarProperty Name="NewApplicantId" ColumnName="NewApplicantId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnEKArrivalFlightDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnEKArrivalFlightDetail">
+        <MappingFragment StoreEntitySet="TrnEKArrivalFlightDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FlightNo" ColumnName="FlightNo" />
+          <ScalarProperty Name="FromAirportCode" ColumnName="FromAirportCode" />
+          <ScalarProperty Name="ToAirportCode" ColumnName="ToAirportCode" />
+          <ScalarProperty Name="FromDateTime" ColumnName="FromDateTime" />
+          <ScalarProperty Name="ToDateTime" ColumnName="ToDateTime" />
+          <ScalarProperty Name="PNR" ColumnName="PNR" />
+          <ScalarProperty Name="ItineraryId" ColumnName="ItineraryId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ItineraryGroupId" ColumnName="ItineraryGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnEKDepartureFlightDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnEKDepartureFlightDetail">
+        <MappingFragment StoreEntitySet="TrnEKDepartureFlightDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FlightNo" ColumnName="FlightNo" />
+          <ScalarProperty Name="FromAirportCode" ColumnName="FromAirportCode" />
+          <ScalarProperty Name="ToAirportCode" ColumnName="ToAirportCode" />
+          <ScalarProperty Name="FromDateTime" ColumnName="FromDateTime" />
+          <ScalarProperty Name="ToDateTime" ColumnName="ToDateTime" />
+          <ScalarProperty Name="PNR" ColumnName="PNR" />
+          <ScalarProperty Name="ItineraryId" ColumnName="ItineraryId" />
+          <ScalarProperty Name="TrnEKArrivalFlightDetailsId" ColumnName="TrnEKArrivalFlightDetailsId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ItineraryGroupId" ColumnName="ItineraryGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnEKItineraryXMLLogs">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnEKItineraryXMLLog">
+        <MappingFragment StoreEntitySet="TrnEKItineraryXMLLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ItineraryXML" ColumnName="ItineraryXML" />
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnFeedbacks">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnFeedback">
+        <MappingFragment StoreEntitySet="TrnFeedback">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="ServiceRatingId" ColumnName="ServiceRatingId" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnGroupAddOnAssociations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnGroupAddOnAssociation">
+        <MappingFragment StoreEntitySet="TrnGroupAddOnAssociation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VACAddOnFeesAssociationId" ColumnName="VACAddOnFeesAssociationId" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifedDate" ColumnName="ModifedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnGroupOnlinePayments">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnGroupOnlinePayment">
+        <MappingFragment StoreEntitySet="TrnGroupOnlinePayment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="OnlinePaymentDetailsID" ColumnName="OnlinePaymentDetailsID" />
+          <ScalarProperty Name="TrackID" ColumnName="TrackID" />
+          <ScalarProperty Name="PGBankTransactionId" ColumnName="PGBankTransactionId" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="BankResult" ColumnName="BankResult" />
+          <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="PaymentGateWayId" ColumnName="PaymentGateWayId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnGroupPaymentDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnGroupPaymentDetail">
+        <MappingFragment StoreEntitySet="TrnGroupPaymentDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="TravelAgentDiscountId" ColumnName="TravelAgentDiscountId" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="DepositLedgerId" ColumnName="DepositLedgerId" />
+          <ScalarProperty Name="CreditAmountUsed" ColumnName="CreditAmountUsed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnGroupServiceAssociations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnGroupServiceAssociation">
+        <MappingFragment StoreEntitySet="TrnGroupServiceAssociation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VASVACCategoryAssociationd" ColumnName="VASVACCategoryAssociationd" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="NoOfServices" ColumnName="NoOfServices" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsChecked" ColumnName="IsChecked" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnInstrumentPayments">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnInstrumentPayment">
+        <MappingFragment StoreEntitySet="TrnInstrumentPayment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InstrumentTypeId" ColumnName="InstrumentTypeId" />
+          <ScalarProperty Name="InstrumentNumber" ColumnName="InstrumentNumber" />
+          <ScalarProperty Name="InstrumentDate" ColumnName="InstrumentDate" />
+          <ScalarProperty Name="InstrumentAmount" ColumnName="InstrumentAmount" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="DDLocationId" ColumnName="DDLocationId" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CretaedDate" ColumnName="CretaedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="DDType" ColumnName="DDType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnItineraries">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnItinerary">
+        <MappingFragment StoreEntitySet="TrnItinerary">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PNRNo" ColumnName="PNRNo" />
+          <ScalarProperty Name="TicketNo" ColumnName="TicketNo" />
+          <ScalarProperty Name="ArrivalFlightNo" ColumnName="ArrivalFlightNo" />
+          <ScalarProperty Name="ArrivalDate" ColumnName="ArrivalDate" />
+          <ScalarProperty Name="DepFlightNo" ColumnName="DepFlightNo" />
+          <ScalarProperty Name="DepartureDate" ColumnName="DepartureDate" />
+          <ScalarProperty Name="AirlineId" ColumnName="AirlineId" />
+          <ScalarProperty Name="ComingFrom" ColumnName="ComingFrom" />
+          <ScalarProperty Name="GoingTo" ColumnName="GoingTo" />
+          <ScalarProperty Name="IsConfirmBooking" ColumnName="IsConfirmBooking" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="IsEKStaff" ColumnName="IsEKStaff" />
+          <ScalarProperty Name="CultureName" ColumnName="CultureName" />
+          <ScalarProperty Name="ItineraryXMLId" ColumnName="ItineraryXMLId" />
+          <ScalarProperty Name="SourceDomainName" ColumnName="SourceDomainName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnMobileRequestDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnMobileRequestDetail">
+        <MappingFragment StoreEntitySet="TrnMobileRequestDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AppVersion" ColumnName="AppVersion" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Device" ColumnName="Device" />
+          <ScalarProperty Name="ContentVersion" ColumnName="ContentVersion" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnOnlinePaymentDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnOnlinePaymentDetail">
+        <MappingFragment StoreEntitySet="TrnOnlinePaymentDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RequestXML" ColumnName="RequestXML" />
+          <ScalarProperty Name="ResponseXML" ColumnName="ResponseXML" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnPromotionBulkUploadedDatas">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnPromotionBulkUploadedData">
+        <MappingFragment StoreEntitySet="TrnPromotionBulkUploadedData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UploadRefNo" ColumnName="UploadRefNo" />
+          <ScalarProperty Name="PNRNo" ColumnName="PNRNo" />
+          <ScalarProperty Name="PromotionCode" ColumnName="PromotionCode" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="ConfirmEmailID" ColumnName="ConfirmEmailID" />
+          <ScalarProperty Name="ValidityDate" ColumnName="ValidityDate" />
+          <ScalarProperty Name="DiscountAmt" ColumnName="DiscountAmt" />
+          <ScalarProperty Name="DiscountPer" ColumnName="DiscountPer" />
+          <ScalarProperty Name="IsFreeVisa" ColumnName="IsFreeVisa" />
+          <ScalarProperty Name="IsValidated" ColumnName="IsValidated" />
+          <ScalarProperty Name="IsUpdated" ColumnName="IsUpdated" />
+          <ScalarProperty Name="UploadedBy" ColumnName="UploadedBy" />
+          <ScalarProperty Name="UploadedDate" ColumnName="UploadedDate" />
+          <ScalarProperty Name="ValidationMessage" ColumnName="ValidationMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnQueryForms">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnQueryForm">
+        <MappingFragment StoreEntitySet="TrnQueryForm">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SalutationId" ColumnName="SalutationId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="ItineraryId" ColumnName="ItineraryId" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="DateOfArrival" ColumnName="DateOfArrival" />
+          <ScalarProperty Name="Query" ColumnName="Query" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnRefundTravelAgentGroups">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnRefundTravelAgentGroup">
+        <MappingFragment StoreEntitySet="TrnRefundTravelAgentGroup">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LedgerID" ColumnName="LedgerID" />
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="TravelAgentGroupId" ColumnName="TravelAgentGroupId" />
+          <ScalarProperty Name="InstrumentTypeId" ColumnName="InstrumentTypeId" />
+          <ScalarProperty Name="CheckDDRTGSNo" ColumnName="CheckDDRTGSNo" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="RefundAmount" ColumnName="RefundAmount" />
+          <ScalarProperty Name="IsCreditClosed" ColumnName="IsCreditClosed" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnSequences">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnSequence">
+        <MappingFragment StoreEntitySet="TrnSequence">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MaxNumber" ColumnName="MaxNumber" />
+          <ScalarProperty Name="VacId" ColumnName="VacId" />
+          <ScalarProperty Name="GeneratedDate" ColumnName="GeneratedDate" />
+          <ScalarProperty Name="IsEkOnline" ColumnName="IsEkOnline" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnTravelAgentAdvances">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnTravelAgentAdvance">
+        <MappingFragment StoreEntitySet="TrnTravelAgentAdvance">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LedgerID" ColumnName="LedgerID" />
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="TravelAgentGroupId" ColumnName="TravelAgentGroupId" />
+          <ScalarProperty Name="InstrumentTypeId" ColumnName="InstrumentTypeId" />
+          <ScalarProperty Name="ChequeDDRTGSNo" ColumnName="ChequeDDRTGSNo" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankAddress" ColumnName="BankAddress" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="Approved" ColumnName="Approved" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="Rejected" ColumnName="Rejected" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnTravelAgentApplicantAddresses">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnTravelAgentApplicantAddress">
+        <MappingFragment StoreEntitySet="TrnTravelAgentApplicantAddress">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+          <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+          <ScalarProperty Name="PhoneTA" ColumnName="PhoneTA" />
+          <ScalarProperty Name="PhonePAX" ColumnName="PhonePAX" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnTravelAgentGroupCreditApproveds">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnTravelAgentGroupCreditApproved">
+        <MappingFragment StoreEntitySet="TrnTravelAgentGroupCreditApproved">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="TravelAgentGroupId" ColumnName="TravelAgentGroupId" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsCreditClosed" ColumnName="IsCreditClosed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnTravelAgentGroupDepositLedgers">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnTravelAgentGroupDepositLedger">
+        <MappingFragment StoreEntitySet="TrnTravelAgentGroupDepositLedger">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="TravelAgentGroupId" ColumnName="TravelAgentGroupId" />
+          <ScalarProperty Name="LedgerTransactionTypeId" ColumnName="LedgerTransactionTypeId" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="Particulars" ColumnName="Particulars" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnVAFDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnVAFDetail">
+        <MappingFragment StoreEntitySet="TrnVAFDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IsPrimary" ColumnName="IsPrimary" />
+          <ScalarProperty Name="ApplicantArabicId" ColumnName="ApplicantArabicId" />
+          <ScalarProperty Name="ApplicantPassportId" ColumnName="ApplicantPassportId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="MaritalStatusId" ColumnName="MaritalStatusId" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="PlaceOfBirth" ColumnName="PlaceOfBirth" />
+          <ScalarProperty Name="BirthCountry" ColumnName="BirthCountry" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+          <ScalarProperty Name="SpouseName" ColumnName="SpouseName" />
+          <ScalarProperty Name="IsGratis" ColumnName="IsGratis" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="TelephoneNo" ColumnName="TelephoneNo" />
+          <ScalarProperty Name="PrimaryEmailId" ColumnName="PrimaryEmailId" />
+          <ScalarProperty Name="SecondaryEmailId" ColumnName="SecondaryEmailId" />
+          <ScalarProperty Name="ReligionId" ColumnName="ReligionId" />
+          <ScalarProperty Name="QualificationId" ColumnName="QualificationId" />
+          <ScalarProperty Name="RelationShipId" ColumnName="RelationShipId" />
+          <ScalarProperty Name="ProfessionId" ColumnName="ProfessionId" />
+          <ScalarProperty Name="PreviousNationalityId" ColumnName="PreviousNationalityId" />
+          <ScalarProperty Name="CurrentNationalityId" ColumnName="CurrentNationalityId" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="ApplicantAddressId" ColumnName="ApplicantAddressId" />
+          <ScalarProperty Name="ApplicantEmployerDetailsId" ColumnName="ApplicantEmployerDetailsId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifedDate" ColumnName="ModifedDate" />
+          <ScalarProperty Name="PurposeofVisitId" ColumnName="PurposeofVisitId" />
+          <ScalarProperty Name="IsSkywardMember" ColumnName="IsSkywardMember" />
+          <ScalarProperty Name="SalutationId" ColumnName="SalutationId" />
+          <ScalarProperty Name="SkywardMemberTypeId" ColumnName="SkywardMemberTypeId" />
+          <ScalarProperty Name="TravelAgentApplicantAddressId" ColumnName="TravelAgentApplicantAddressId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnVAFRefunds">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnVAFRefund">
+        <MappingFragment StoreEntitySet="TrnVAFRefund">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="IsRefundProcessed" ColumnName="IsRefundProcessed" />
+          <ScalarProperty Name="RefundStatus" ColumnName="RefundStatus" />
+          <ScalarProperty Name="DepositAmount" ColumnName="DepositAmount" />
+          <ScalarProperty Name="VASAmount" ColumnName="VASAmount" />
+          <ScalarProperty Name="FeeAmount" ColumnName="FeeAmount" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="PaymentGateWayId" ColumnName="PaymentGateWayId" />
+          <ScalarProperty Name="IsExceptional" ColumnName="IsExceptional" />
+          <ScalarProperty Name="RefundAmount" ColumnName="RefundAmount" />
+          <ScalarProperty Name="TrackID" ColumnName="TrackID" />
+          <ScalarProperty Name="IsEKOnline" ColumnName="IsEKOnline" />
+          <ScalarProperty Name="IsVACOnline" ColumnName="IsVACOnline" />
+          <ScalarProperty Name="IsB2B" ColumnName="IsB2B" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnVAFRefundDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnVAFRefundDetail">
+        <MappingFragment StoreEntitySet="TrnVAFRefundDetails">
+          <ScalarProperty Name="VAFRefundId" ColumnName="VAFRefundId" />
+          <ScalarProperty Name="RequestXML" ColumnName="RequestXML" />
+          <ScalarProperty Name="ResponseXML" ColumnName="ResponseXML" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrnVCNUploadedDatas">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.TrnVCNUploadedData">
+        <MappingFragment StoreEntitySet="TrnVCNUploadedData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UploadRefNo" ColumnName="UploadRefNo" />
+          <ScalarProperty Name="SrNo" ColumnName="SrNo" />
+          <ScalarProperty Name="VCNNo" ColumnName="VCNNo" />
+          <ScalarProperty Name="VCNDate" ColumnName="VCNDate" />
+          <ScalarProperty Name="AppRefNo" ColumnName="AppRefNo" />
+          <ScalarProperty Name="PassportNo" ColumnName="PassportNo" />
+          <ScalarProperty Name="IsUpdated" ColumnName="IsUpdated" />
+          <ScalarProperty Name="UploadedBy" ColumnName="UploadedBy" />
+          <ScalarProperty Name="UploadedDate" ColumnName="UploadedDate" />
+          <ScalarProperty Name="ValidationMessage" ColumnName="ValidationMessage" />
+          <ScalarProperty Name="IsValidated" ColumnName="IsValidated" />
+          <ScalarProperty Name="VisaTerm" ColumnName="VisaTerm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserSessionDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.UserSessionDetail">
+        <MappingFragment StoreEntitySet="UserSessionDetails">
+          <ScalarProperty Name="UserAssociationId" ColumnName="UserAssociationId" />
+          <ScalarProperty Name="LatestOfflineSessionId" ColumnName="LatestOfflineSessionId" />
+          <ScalarProperty Name="LatestOnlineSessionId" ColumnName="LatestOnlineSessionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwAdvanceSearches">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.vwAdvanceSearch">
+        <MappingFragment StoreEntitySet="vwAdvanceSearch">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WebRefNo" ColumnName="WebRefNo" />
+          <ScalarProperty Name="AppRefNo" ColumnName="AppRefNo" />
+          <ScalarProperty Name="PassportNo" ColumnName="PassportNo" />
+          <ScalarProperty Name="PNRNo" ColumnName="PNRNo" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PrimaryEmailid" ColumnName="PrimaryEmailid" />
+          <ScalarProperty Name="AirlineName" ColumnName="AirlineName" />
+          <ScalarProperty Name="LatestStatus" ColumnName="LatestStatus" />
+          <ScalarProperty Name="TicketNo" ColumnName="TicketNo" />
+          <ScalarProperty Name="IsEKStaff" ColumnName="IsEKStaff" />
+          <ScalarProperty Name="VacId" ColumnName="VacId" />
+          <ScalarProperty Name="instrumentnumber" ColumnName="instrumentnumber" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwAToBeAppraisedStatus">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.vwAToBeAppraisedStatu">
+        <MappingFragment StoreEntitySet="vwAToBeAppraisedStatus">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwCashCounterDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.vwCashCounterDetail">
+        <MappingFragment StoreEntitySet="vwCashCounterDetails">
+          <ScalarProperty Name="VisaTermId" ColumnName="VisaTermId" />
+          <ScalarProperty Name="VisaTermFeeId" ColumnName="VisaTermFeeId" />
+          <ScalarProperty Name="NoOfApplicants" ColumnName="NoOfApplicants" />
+          <ScalarProperty Name="TravelTypeId" ColumnName="TravelTypeId" />
+          <ScalarProperty Name="CustomerTypeId" ColumnName="CustomerTypeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="GratisCount" ColumnName="GratisCount" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="VisaFee" ColumnName="VisaFee" />
+          <ScalarProperty Name="FeeType" ColumnName="FeeType" />
+          <ScalarProperty Name="AddOnFeeId" ColumnName="AddOnFeeId" />
+          <ScalarProperty Name="PackagesAmount" ColumnName="PackagesAmount" />
+          <ScalarProperty Name="ServicesName" ColumnName="ServicesName" />
+          <ScalarProperty Name="ServicesId" ColumnName="ServicesId" />
+          <ScalarProperty Name="ServicesAmount" ColumnName="ServicesAmount" />
+          <ScalarProperty Name="NoOfServices" ColumnName="NoOfServices" />
+          <ScalarProperty Name="VACId" ColumnName="VACId" />
+          <ScalarProperty Name="GroupAddOnAssociationApplicantGroupId" ColumnName="GroupAddOnAssociationApplicantGroupId" />
+          <ScalarProperty Name="GroupServiceAssociationApplicantsGroupId" ColumnName="GroupServiceAssociationApplicantsGroupId" />
+          <ScalarProperty Name="TravelAgencyName" ColumnName="TravelAgencyName" />
+          <ScalarProperty Name="CustomerTypeName" ColumnName="CustomerTypeName" />
+          <ScalarProperty Name="InstrumentTypeName" ColumnName="InstrumentTypeName" />
+          <ScalarProperty Name="VisaTermIsActive" ColumnName="VisaTermIsActive" />
+          <ScalarProperty Name="VisaTermFeeIsActive" ColumnName="VisaTermFeeIsActive" />
+          <ScalarProperty Name="CashReceiptNo" ColumnName="CashReceiptNo" />
+          <ScalarProperty Name="TotalVisaAmount" ColumnName="TotalVisaAmount" />
+          <ScalarProperty Name="InstrumentId" ColumnName="InstrumentId" />
+          <ScalarProperty Name="IsUsed" ColumnName="IsUsed" />
+          <ScalarProperty Name="IsCancelled" ColumnName="IsCancelled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLatestAppraisalAndDNRDs">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.vwLatestAppraisalAndDNRD">
+        <MappingFragment StoreEntitySet="vwLatestAppraisalAndDNRD">
+          <ScalarProperty Name="Applicantid" ColumnName="Applicantid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLatestVisaTermFees">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.vwLatestVisaTermFee">
+        <MappingFragment StoreEntitySet="vwLatestVisaTermFees">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="visatermid" ColumnName="visatermid" />
+          <ScalarProperty Name="vacid" ColumnName="vacid" />
+          <ScalarProperty Name="airlineid" ColumnName="airlineid" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPaymentDetails">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.vwPaymentDetail">
+        <MappingFragment StoreEntitySet="vwPaymentDetails">
+          <ScalarProperty Name="CartId" ColumnName="CartId" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="IsGratis" ColumnName="IsGratis" />
+          <ScalarProperty Name="NumberofGratis" ColumnName="NumberofGratis" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="WebRefNo" ColumnName="WebRefNo" />
+          <ScalarProperty Name="PNRNo" ColumnName="PNRNo" />
+          <ScalarProperty Name="PassportNo" ColumnName="PassportNo" />
+          <ScalarProperty Name="Visa" ColumnName="Visa" />
+          <ScalarProperty Name="Fees" ColumnName="Fees" />
+          <ScalarProperty Name="IsB2b" ColumnName="IsB2b" />
+          <ScalarProperty Name="IsVacOnline" ColumnName="IsVacOnline" />
+          <ScalarProperty Name="IsEkOnline" ColumnName="IsEkOnline" />
+          <ScalarProperty Name="IsPrimary" ColumnName="IsPrimary" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="DiscountId" ColumnName="DiscountId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ValidityPeriod" ColumnName="ValidityPeriod" />
+          <ScalarProperty Name="Package" ColumnName="Package" />
+          <ScalarProperty Name="Service" ColumnName="Service" />
+          <ScalarProperty Name="NoOfApplicants" ColumnName="NoOfApplicants" />
+          <ScalarProperty Name="NumberOfVisa" ColumnName="NumberOfVisa" />
+          <ScalarProperty Name="NumberOfVisaDiscountGiven" ColumnName="NumberOfVisaDiscountGiven" />
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="DiscountType" ColumnName="DiscountType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPendingCases">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.vwPendingCas">
+        <MappingFragment StoreEntitySet="vwPendingCases">
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="applicantid" ColumnName="applicantid" />
+          <ScalarProperty Name="WebRefNo" ColumnName="WebRefNo" />
+          <ScalarProperty Name="PassportNo" ColumnName="PassportNo" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PNRNo" ColumnName="PNRNo" />
+          <ScalarProperty Name="visaname" ColumnName="visaname" />
+          <ScalarProperty Name="vafid" ColumnName="vafid" />
+          <ScalarProperty Name="StageId" ColumnName="StageId" />
+          <ScalarProperty Name="ItineraryId" ColumnName="ItineraryId" />
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+          <ScalarProperty Name="IsPrimary" ColumnName="IsPrimary" />
+          <ScalarProperty Name="stagename" ColumnName="stagename" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="NoOfApplicants" ColumnName="NoOfApplicants" />
+          <ScalarProperty Name="AssessmentStatusName" ColumnName="AssessmentStatusName" />
+          <ScalarProperty Name="IsB2b" ColumnName="IsB2b" />
+          <ScalarProperty Name="IsVacOnline" ColumnName="IsVacOnline" />
+          <ScalarProperty Name="IsEkOnline" ColumnName="IsEkOnline" />
+          <ScalarProperty Name="ReversalLedgerId" ColumnName="ReversalLedgerId" />
+          <ScalarProperty Name="IsAssessmentCompleted" ColumnName="IsAssessmentCompleted" />
+          <ScalarProperty Name="ParentGroupId" ColumnName="ParentGroupId" />
+          <ScalarProperty Name="Slorder" ColumnName="Slorder" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwServicesCalculations">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.vwServicesCalculation">
+        <MappingFragment StoreEntitySet="vwServicesCalculation">
+          <ScalarProperty Name="NoOfApplicants" ColumnName="NoOfApplicants" />
+          <ScalarProperty Name="ApplicantGroupId" ColumnName="ApplicantGroupId" />
+          <ScalarProperty Name="VisaTermId" ColumnName="VisaTermId" />
+          <ScalarProperty Name="VisaTermName" ColumnName="VisaTermName" />
+          <ScalarProperty Name="IsB2b" ColumnName="IsB2b" />
+          <ScalarProperty Name="IsVacOnline" ColumnName="IsVacOnline" />
+          <ScalarProperty Name="IsEkOnline" ColumnName="IsEkOnline" />
+          <ScalarProperty Name="VisaFee" ColumnName="VisaFee" />
+          <ScalarProperty Name="GroupAddonAssociationAppGroupId" ColumnName="GroupAddonAssociationAppGroupId" />
+          <ScalarProperty Name="VACAddOnFeesAssociationId" ColumnName="VACAddOnFeesAssociationId" />
+          <ScalarProperty Name="GroupServiceAssociationAppGroupId" ColumnName="GroupServiceAssociationAppGroupId" />
+          <ScalarProperty Name="GroupServiceAmt" ColumnName="GroupServiceAmt" />
+          <ScalarProperty Name="NoOfServices" ColumnName="NoOfServices" />
+          <ScalarProperty Name="VASVACCategoryAssociationd" ColumnName="VASVACCategoryAssociationd" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AddOnFeeId" ColumnName="AddOnFeeId" />
+          <ScalarProperty Name="VACAddOnFeesAssociationAmt" ColumnName="VACAddOnFeesAssociationAmt" />
+          <ScalarProperty Name="VASId" ColumnName="VASId" />
+          <ScalarProperty Name="VASVACAssociationAmt" ColumnName="VASVACAssociationAmt" />
+          <ScalarProperty Name="ServicesName" ColumnName="ServicesName" />
+          <ScalarProperty Name="FeeType" ColumnName="FeeType" />
+          <ScalarProperty Name="TotalVisaAmount" ColumnName="TotalVisaAmount" />
+          <ScalarProperty Name="VisaApplicantGroup" ColumnName="VisaApplicantGroup" />
+          <ScalarProperty Name="TravelTypeId" ColumnName="TravelTypeId" />
+          <ScalarProperty Name="TravelTypeName" ColumnName="TravelTypeName" />
+          <ScalarProperty Name="GratisCount" ColumnName="GratisCount" />
+          <ScalarProperty Name="InstrumentTypeId" ColumnName="InstrumentTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwSummaries">
+      <EntityTypeMapping TypeName="DVPC_Fresh_DevModel.vwSummary">
+        <MappingFragment StoreEntitySet="vwSummary">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="WebReferenceNumber" ColumnName="WebReferenceNumber" />
+          <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+          <ScalarProperty Name="IsPrimary" ColumnName="IsPrimary" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ParentGroupId" ColumnName="ParentGroupId" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="IsB2b" ColumnName="IsB2b" />
+          <ScalarProperty Name="IsVacOnline" ColumnName="IsVacOnline" />
+          <ScalarProperty Name="IsEkOnline" ColumnName="IsEkOnline" />
+          <ScalarProperty Name="VAFId" ColumnName="VAFId" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="UserAssociationId" ColumnName="UserAssociationId" />
+          <ScalarProperty Name="IsGratis" ColumnName="IsGratis" />
+          <ScalarProperty Name="TravelAgentId" ColumnName="TravelAgentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="DVPC_Fresh_DevModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MstCurrencyInOC" TypeName="DVPC_Fresh_DevModel.MstCurrencyInOC" StoreEntitySet="MstCurrencyInOC">
+      <EndProperty Name="MstCurrency">
+        <ScalarProperty Name="ID" ColumnName="CurrencyId" />
+      </EndProperty>
+      <EndProperty Name="MstOC">
+        <ScalarProperty Name="ID" ColumnName="OCId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MstOCInCountry" TypeName="DVPC_Fresh_DevModel.MstOCInCountry" StoreEntitySet="MstOCInCountry">
+      <EndProperty Name="MstCountry">
+        <ScalarProperty Name="ID" ColumnName="CountryId" />
+      </EndProperty>
+      <EndProperty Name="MstOC">
+        <ScalarProperty Name="ID" ColumnName="OCId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MstRoleSubMenuMapping" TypeName="DVPC_Fresh_DevModel.MstRoleSubMenuMapping" StoreEntitySet="MstRoleSubMenuMapping">
+      <EndProperty Name="MstMenuSubMenuMapping">
+        <ScalarProperty Name="Id" ColumnName="MenuMappingId" />
+      </EndProperty>
+      <EndProperty Name="MstOfflineRoles">
+        <ScalarProperty Name="Id" ColumnName="OfflineRoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MstTravelAgentInGroup" TypeName="DVPC_Fresh_DevModel.MstTravelAgentInGroup" StoreEntitySet="MstTravelAgentInGroup">
+      <EndProperty Name="MstTravelAgent">
+        <ScalarProperty Name="ID" ColumnName="TravelAgentId" />
+      </EndProperty>
+      <EndProperty Name="MstTravelAgentGroup">
+        <ScalarProperty Name="Id" ColumnName="TravelAgentGroupId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MstVACInOC" TypeName="DVPC_Fresh_DevModel.MstVACInOC" StoreEntitySet="MstVACInOC">
+      <EndProperty Name="MstOC">
+        <ScalarProperty Name="ID" ColumnName="OCId" />
+      </EndProperty>
+      <EndProperty Name="MstVAC">
+        <ScalarProperty Name="ID" ColumnName="VACId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MstVATInOC" TypeName="DVPC_Fresh_DevModel.MstVATInOC" StoreEntitySet="MstVATInOC">
+      <EndProperty Name="MstOC">
+        <ScalarProperty Name="ID" ColumnName="OCId" />
+      </EndProperty>
+      <EndProperty Name="MstVAT">
+        <ScalarProperty Name="Id" ColumnName="VATId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MstVisaTermInOC" TypeName="DVPC_Fresh_DevModel.MstVisaTermInOC" StoreEntitySet="MstVisaTermInOC">
+      <EndProperty Name="MstOC">
+        <ScalarProperty Name="ID" ColumnName="OCId" />
+      </EndProperty>
+      <EndProperty Name="MstVisaTerm">
+        <ScalarProperty Name="ID" ColumnName="VisaTermId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="DVPC_Fresh_DevModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="SP_CheckAllApplicantsDocumentUploaded" FunctionName="DVPC_Fresh_DevModel.Store.SP_CheckAllApplicantsDocumentUploaded">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.SP_CheckAllApplicantsDocumentUploaded_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WebRefNo" ColumnName="WebRefNo" />
+          <ScalarProperty Name="isVAFCompleted" ColumnName="isVAFCompleted" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="NoofApplicants" ColumnName="NoofApplicants" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_CheckAllApplicantsInVAF" FunctionName="DVPC_Fresh_DevModel.Store.SP_CheckAllApplicantsInVAF">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.SP_CheckAllApplicantsInVAF_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WebRefNo" ColumnName="WebRefNo" />
+          <ScalarProperty Name="isVAFCompleted" ColumnName="isVAFCompleted" />
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="NoofApplicants" ColumnName="NoofApplicants" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_CheckApplicantStageForPayment" FunctionName="DVPC_Fresh_DevModel.Store.SP_CheckApplicantStageForPayment" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="DVPC_Fresh_DevModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="DVPC_Fresh_DevModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_generate_inserts" FunctionName="DVPC_Fresh_DevModel.Store.sp_generate_inserts" />
+    <FunctionImportMapping FunctionImportName="SP_GetAllApplicantDetails" FunctionName="DVPC_Fresh_DevModel.Store.SP_GetAllApplicantDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.SP_GetAllApplicantDetails_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="webrefno" ColumnName="webrefno" />
+          <ScalarProperty Name="applicantsGroupid" ColumnName="applicantsGroupid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetApplicantDetails" FunctionName="DVPC_Fresh_DevModel.Store.SP_GetApplicantDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.SP_GetApplicantDetails_Result">
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="AppGroupId" ColumnName="AppGroupId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="TelephoneNo" ColumnName="TelephoneNo" />
+          <ScalarProperty Name="PrimaryEmailId" ColumnName="PrimaryEmailId" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="PaymentGatewayId" ColumnName="PaymentGatewayId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetApplicationStatus" FunctionName="DVPC_Fresh_DevModel.Store.SP_GetApplicationStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.SP_GetApplicationStatus_Result">
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetDetailsForWebRefNo" FunctionName="DVPC_Fresh_DevModel.Store.SP_GetDetailsForWebRefNo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.SP_GetDetailsForWebRefNo_Result">
+          <ScalarProperty Name="OCID" ColumnName="OCID" />
+          <ScalarProperty Name="VACID" ColumnName="VACID" />
+          <ScalarProperty Name="Timeoffset" ColumnName="Timeoffset" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="code" ColumnName="code" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetGroupOnlinePaymentDetails" FunctionName="DVPC_Fresh_DevModel.Store.SP_GetGroupOnlinePaymentDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.SP_GetGroupOnlinePaymentDetails_Result">
+          <ScalarProperty Name="ApplicantsGroupId" ColumnName="ApplicantsGroupId" />
+          <ScalarProperty Name="TrackId" ColumnName="TrackId" />
+          <ScalarProperty Name="OnlinePaymentDetailsId" ColumnName="OnlinePaymentDetailsId" />
+          <ScalarProperty Name="PaymentGateWayId" ColumnName="PaymentGateWayId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetOnlinePaymentID" FunctionName="DVPC_Fresh_DevModel.Store.SP_GetOnlinePaymentID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.SP_GetOnlinePaymentID_Result">
+          <ScalarProperty Name="OnlinePaymentId" ColumnName="OnlinePaymentId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetPaymentGateWayDetails" FunctionName="DVPC_Fresh_DevModel.Store.SP_GetPaymentGateWayDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.SP_GetPaymentGateWayDetails_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MerchantID" ColumnName="MerchantID" />
+          <ScalarProperty Name="MerchantPassword" ColumnName="MerchantPassword" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="RefundURL" ColumnName="RefundURL" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetStageDetails" FunctionName="DVPC_Fresh_DevModel.Store.SP_GetStageDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.SP_GetStageDetails_Result">
+          <ScalarProperty Name="CurrentOrder" ColumnName="CurrentOrder" />
+          <ScalarProperty Name="SavedStage" ColumnName="SavedStage" />
+          <ScalarProperty Name="MaxOrder" ColumnName="MaxOrder" />
+          <ScalarProperty Name="PreviousOrder" ColumnName="PreviousOrder" />
+          <ScalarProperty Name="PreviousStage" ColumnName="PreviousStage" />
+          <ScalarProperty Name="CurrentStage" ColumnName="CurrentStage" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetTransactionPaymentDetails" FunctionName="DVPC_Fresh_DevModel.Store.SP_GetTransactionPaymentDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.SP_GetTransactionPaymentDetails_Result">
+          <ScalarProperty Name="WebRefNo" ColumnName="WebRefNo" />
+          <ScalarProperty Name="ResultCode" ColumnName="ResultCode" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="DVPC_Fresh_DevModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="DVPC_Fresh_DevModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DVPC_Fresh_DevModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="DVPC_Fresh_DevModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="SP_SaveItineraryXMLDetails" FunctionName="DVPC_Fresh_DevModel.Store.SP_SaveItineraryXMLDetails" />
+    <FunctionImportMapping FunctionImportName="SP_SavePGResponse" FunctionName="DVPC_Fresh_DevModel.Store.SP_SavePGResponse" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateGroupOnlinePaymentDetails" FunctionName="DVPC_Fresh_DevModel.Store.SP_UpdateGroupOnlinePaymentDetails" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateOnlinePaymentDetails" FunctionName="DVPC_Fresh_DevModel.Store.SP_UpdateOnlinePaymentDetails" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="DVPC_Fresh_DevModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="SP_ValidateMerchant" FunctionName="DVPC_Fresh_DevModel.Store.SP_ValidateMerchant" />
+  </EntityContainerMapping>
+</Mapping>
